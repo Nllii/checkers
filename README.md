@@ -1,0 +1,2 @@
+# checkers
+a checkers game being played using a usb webcam and opencv.  The goal is to move the mouse.
