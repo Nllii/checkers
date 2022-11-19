@@ -10,3 +10,6 @@ TODO:
 
 
 
+Notes:
+will have to update Haar cascade algo...
+this is out of date from  https://github.com/dereks/motion_tracking
