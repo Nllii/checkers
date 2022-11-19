@@ -7,7 +7,7 @@ TODO:
 
 1. Live streaming from usb cam to localhost or ip based address. using flask.
 
-
+2. leverage kaggle system  to train model.
 
 
 Notes:

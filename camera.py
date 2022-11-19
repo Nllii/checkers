@@ -21,7 +21,7 @@ class VideoCamera(object):
         eye_cascade = cv2.CascadeClassifier(f"{haar_folder}/haarcascade_eye.xml")
 
         
-        # image=cv2.resize(image,None,fx=ds_factor,fy=ds_factor,interpolation=cv2.INTER_AREA)
+        image=cv2.resize(image,None,fx=ds_factor,fy=ds_factor,interpolation=cv2.INTER_AREA)
         gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
         
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -32,7 +32,7 @@ class VideoCamera(object):
             eyes = eye_cascade.detectMultiScale(roi_gray)
             for (ex,ey,ew,eh) in eyes:
                 cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
-
+                break
 
         
         
