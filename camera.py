@@ -3,7 +3,7 @@ ds_factor = 0.5
 class VideoCamera(object):
     def __init__(self):
         self.video = cv2.VideoCapture(0)
-        self.video.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        # self.video.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 
     def __del__(self):
         self.video.release()

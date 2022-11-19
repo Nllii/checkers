@@ -1,17 +1,34 @@
-<html>
-  <head>
-    <title>checkersBoard</title>
-    <style>
-	img {
-  	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 35%
-	}
-    </style>
-  </head>
-  <body>
-    <h1 align="center">This page is used for debuging and seeing what the cameara see. </h1>
-    <img id="bg" class="center" src="{{ url_for('video_feed') }}">
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>.checkers</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h3 class="mt-5">- checkersboard</h3>
+            <img src="{{ url_for('video_feed') }}" width="100%">
+        </div>
+        <div class="col-lg-2">
+            <h3 class="mt-5">- instructions</h3>
+            <p>1. Place the board on a flat surface</p>
+            <p>2. Place the pieces on the board</p>
+            <p>3. Press the start button</p>
+            <p>4. Press the stop button</p>
+             <p>5. Press the reset button</p>
+        </div>
+
+       
+    </div>
+</div>
+</body>
 </html>
